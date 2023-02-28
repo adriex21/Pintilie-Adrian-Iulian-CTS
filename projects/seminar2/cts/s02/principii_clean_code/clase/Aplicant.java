@@ -41,8 +41,14 @@ public abstract class Aplicant{
 	}
 	
 	
-
 	
+	
+	public void setDenumireProiect(String[] denumireProiect) {
+		this.denumireProiect = denumireProiect;
+	}
+	public String[] getDenumireProiect() {
+		return denumireProiect;
+	}
 	public Aplicant() {
 		super();
 		// TODO Auto-generated constructor stub
