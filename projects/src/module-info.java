@@ -6,4 +6,5 @@
  *
  */
 module projects {
+	requires java.xml;
 }
