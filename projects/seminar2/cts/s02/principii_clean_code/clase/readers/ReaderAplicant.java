@@ -14,10 +14,12 @@ public abstract class ReaderAplicant {
 		aplicant.setPrenume(input.next());
 		aplicant.setVarsta(Integer.valueOf(input.nextInt()));
 		aplicant.setPunctaj(Integer.valueOf(input.nextInt()));
-		aplicant.setNr_proiecte(Integer.valueOf(input.nextInt()));
-		String[] vect = new String[5];
-		for (int i = 0; i < aplicant.getNr_proiecte(); i++)
+		int nr = input.nextInt();
+		String[] vect = new String[nr];
+		for (int i = 0; i < nr; i++)
 			vect[i] = input.next();
+		aplicant.setNr_proiecte(nr);
+		aplicant.setDenumireProiect(vect);
 		
 		
 		
