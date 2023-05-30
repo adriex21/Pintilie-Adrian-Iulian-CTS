@@ -1,5 +1,6 @@
 package ro.ase.testing.suite;
 
+import org.junit.experimental.categories.Categories;
 import org.junit.platform.suite.api.SelectClasses;
 import org.junit.platform.suite.api.Suite;
 

@@ -2,7 +2,7 @@ package ro.ase.testing.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import ro.ase.testing.mocks.FakePerson;
@@ -20,6 +20,7 @@ public class TestingPachetTuristicDiscount {
 		assertEquals(850, pachet.getPret());
 	}
 	
+	@Tag("Tag2")
 	@Test 
 	void shouldNotApplyDiscount() {
 		FakePerson fakePerson = new FakePerson();

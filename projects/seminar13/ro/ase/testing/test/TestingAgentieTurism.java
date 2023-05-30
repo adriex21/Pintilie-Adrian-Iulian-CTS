@@ -2,6 +2,7 @@ package ro.ase.testing.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import ro.ase.testing.mocks.FakePachet;
@@ -10,6 +11,7 @@ import ro.ase.testing.model.IPachet;
 
 public class TestingAgentieTurism {
 
+	@Tag("Tag1")
 	@Test
 	void expectedPrice() {
 		AgentieTurism agentie = new AgentieTurism();
