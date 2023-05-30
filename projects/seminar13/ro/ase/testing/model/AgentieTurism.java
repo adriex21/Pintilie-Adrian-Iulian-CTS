@@ -5,19 +5,19 @@ import java.util.List;
 
 public class AgentieTurism {
 
-	private List<PachetTuristic> pacheteTuristice;
+	private List<IPachet> pacheteTuristice;
 	
 	public AgentieTurism() {
-		pacheteTuristice=new ArrayList<PachetTuristic>();
+		pacheteTuristice=new ArrayList<IPachet>();
 	}
 	
-	public void adaugaPachet(PachetTuristic pachet) {
+	public void adaugaPachet(IPachet pachet) {
 		pacheteTuristice.add(pachet);
 	}
 	
 	public double calculareSumaTotalaPachete() {
 		double suma=0;
-		for(PachetTuristic pachet:pacheteTuristice) {
+		for(IPachet pachet:pacheteTuristice) {
 			suma+=pachet.getPret();
 		}
 		

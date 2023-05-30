@@ -1,4 +1,4 @@
-package acs.ase.clase;
+package ro.ase.testing.model;
 
 public interface IPersoana {
 	public String getSex();

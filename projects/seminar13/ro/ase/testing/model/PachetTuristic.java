@@ -1,6 +1,6 @@
 package ro.ase.testing.model;
 
-public class PachetTuristic {
+public class PachetTuristic implements IPachet {
 
 	private IPersoana client;
 	private String destinatie;
@@ -19,7 +19,7 @@ public class PachetTuristic {
 
 	public void aplicaDiscountVarstnici(int procent) {
 		if (this.client.getVarsta() >= 65) {
-			this.pret = this.pret - (procent / 100);
+			this.pret = this.pret - (this.pret * procent / 100);
 		}
 	}
 

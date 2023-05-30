@@ -1,18 +1,14 @@
-package ro.ase.testing.tests;
-
-import static org.junit.Assert.assertEquals;
+package ro.ase.testing.test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
-
-import ro.ase.testing.model.PachetTuristic;
-
-import ro.ase.testing.model.IPersoana;
+import static org.junit.Assert.assertEquals;
 import ro.ase.testing.mocks.StubPersoanaMinora;
 import ro.ase.testing.mocks.StubPerson;
+import ro.ase.testing.model.IPersoana;
+import ro.ase.testing.model.PachetTuristic;
 
-class TestingPachetTuristic {
+public class TestingPachetTuristic {
 
 	@Test
 	void testPoaterezerva() {
@@ -29,10 +25,6 @@ class TestingPachetTuristic {
 		assertFalse(pachetTuristic.poateRezerva());
 	}
 	
-	@Test
 	
-	public void testDemonstrativ() {
-		assertEq
-	}
 
 }
